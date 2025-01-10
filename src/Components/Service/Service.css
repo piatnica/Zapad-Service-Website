@@ -1,0 +1,138 @@
+.services {
+    margin-top: 150px;
+}
+
+.h2 {
+    margin-bottom: 50px;
+    transition: all ease 1s 0.2s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.service-info {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    min-height: 450px;
+
+    /* @media (max-width: 1220px) {
+        height: 500px;
+    } */
+}
+
+.item-1 {
+    grid-row: 1 / -1;
+}
+
+.base-for-items {
+    display: flex;
+    /* background-color: #dae9fe; */
+    background-color: #bcd8ff;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* TEXT STYLES BELOW */
+
+.item-1 .item-text {
+    width: 100%;
+}
+
+.item-text {
+    /* width: 60%; */
+    padding: 10px;
+
+    @media (max-width: 1220px) {
+        padding: 5px;
+    }
+}
+
+.item-text ul {
+    list-style: inside;
+    padding: 5px;
+}
+
+.item-text li {
+    padding-bottom: 3px;
+}
+
+.item-text li:last-child {
+    padding: 0;
+}
+
+.item-text p {
+    padding: 15px;
+
+    @media (max-width: 1220px) {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+.item-text span {
+    font-weight: bold;
+}
+
+.item-1 h3 {
+    margin: 0 auto;
+}
+
+.item-3 h3 {
+    margin-left: auto;
+}
+
+.item-text h3 {
+    color: white;
+    background-color: rgb(0, 0, 150);
+    border-radius: 20px;
+    width: max-content;
+    padding: 2px 9px;
+
+    @media (max-width: 1220px) {
+        border-radius: 15px;
+    }
+}
+
+
+
+
+
+
+/* IMAGE STYLES BELOW */
+
+.item-2 .item-img {
+    background-image: url("../../assets/images/washing-machine.png");
+    background-size: cover;
+}
+
+.item-3 .item-img {
+    background-image: url("../../assets/images/dishwasher.jpeg");
+    background-size: cover;
+}
+
+.item-img {
+    /* height: 100%; */
+    width: 45%;
+    border-radius: 40px;
+}
+
+.item-2 .item-img {
+    margin-left: auto;
+}
+
+.item-3 .item-img {
+    margin-right: auto;
+}

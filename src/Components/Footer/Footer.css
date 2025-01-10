@@ -1,0 +1,28 @@
+.footer {
+    border-top: 2px solid white;
+    background-color: rgb(34, 34, 158);
+    color: white;
+    padding: 15px 0;
+    padding-top: 50px;
+}
+
+.appreciate {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-name {
+    color: black;
+    font-size: 1.3rem;
+    padding: 7px 13px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 30px;
+}

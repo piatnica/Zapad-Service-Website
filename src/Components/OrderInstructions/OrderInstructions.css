@@ -1,0 +1,77 @@
+.orderInstructions {
+    margin-top: 150px;
+    background-color: #bcd8ff;
+}
+
+.orderInstructions h2 {
+    margin-bottom: 50px;
+}
+
+.test /* test class */ {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal-align {
+    width: 100%;
+}
+
+
+
+
+.instructions-blocks {
+    /* border: 1px solid red; */
+    display: grid;
+    /* height: 500px; */
+    grid-template-columns: 1fr 1fr;
+    /* ВРЕМЕННО */
+}
+
+.block-test {
+    display: flex;
+    /* border: 2px solid blue; */
+}
+
+.instruction-item {
+    position: relative;
+    display: flex;
+    /* border: 3px solid yellow; */
+    min-height: 150px;
+}
+
+.instruction_4 {
+    margin-top: auto;
+}
+
+.instruction_5 {
+    margin-bottom: auto;
+}
+
+.instruction_number {
+    width: 20%;
+    height: 100%;
+    /* border: 3px solid green; */
+}
+
+.instruction-description {
+    width: 100%;
+    padding: 10px;
+}   
+
+.instruction-description h3 {
+    margin-bottom: 5px;
+}
+
+.instructions-icon {
+    float: right;
+    background-color: rgb(42, 42, 255);
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    padding: 9px;
+}

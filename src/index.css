@@ -1,0 +1,69 @@
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    html,
+    body,
+    #root {
+        min-height: 100vh;
+        overflow-x: hidden;
+        font-family: "Nunito", serif;
+        overflow: visible;
+
+        /* Необходимо установить всем родителям элемента header — CSS свойства overflow: visible. Иначе его CSS свойство — position: sticky не будет работать корректно */
+        @media (max-width:1220px) {
+            overflow: hidden;
+        }
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .content-area {
+        width: 1200px;
+        position: relative;
+        box-sizing: border-box;
+        margin: 0 auto;
+
+        @media (max-width: 1220px) {
+            width: 1000px;
+        }
+    }
+
+    h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+
+        @media (max-width: 1220px) {
+            font-size: 1.2rem;
+        }
+    }

@@ -1,0 +1,23 @@
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-image: url('/src/assets/images/background-main.png');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.covering-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(7, 7, 59, 0.55); 
+}

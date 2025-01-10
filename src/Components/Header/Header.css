@@ -1,0 +1,118 @@
+.main-header {
+    position: sticky;
+    top: 0;
+
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-weight: bold;
+    /* border-bottom: 1px solid black; */
+    /* ВРЕМЕННО Для тестов */
+
+    z-index: 900;
+    transition: all 2s ease;
+}
+
+.main-header.scrolled {
+    top: 10px;
+}
+
+/* Links Styles */
+.nav-points {
+    display: flex;
+    gap: 65px;
+    font-size: 18px;
+    color: white;
+    transition: all 1s ease;
+}
+
+.nav-points.scrolled {
+    color: black;
+    gap: 55px;
+}
+
+.main-header nav {
+    z-index: 10;
+}
+
+/* Button Styles */
+.whatsapp-link {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 12px;
+
+    margin-right: 25px;
+    /* 
+    Установлено margin-rihgt: 25px; чтобы скомпенсировать padding-left логотипа.
+    За счет чего логотип находится ближе к центру чем кнопка, что наглядно видно при расширений фона.
+    */
+    border-radius: 15px;
+
+    background-color: rgb(37, 211, 102);
+    color: white;
+
+    transition: all 1s ease;
+    z-index: 10;
+}
+
+.whatsapp-link.scrolled {
+    transform: translateX(-50px);
+}
+
+/* Logo styles */
+.header-logo {
+    font-size: 1.7rem;
+    padding: 13px 25px;
+    /* Its actually 10 and 22 pixels but, i removed borders. So that, i has to be add that 3 removed border pixels to padding values, for reach exactly position. */
+    border-radius: 30px;
+    transition: all 1s ease;
+    z-index: 10;
+}
+
+.header-logo.scrolled {
+    transform: translateX(50px);
+}
+
+/* Background animation styles*/
+.header-logo-animation {
+    position: absolute;
+
+    /* Данные позиций и размеров взяты с результата функций getBoundingClientRect() */
+    top: 20px;
+    left: 50px;
+    width: 228.28px;
+    height: 61.6px;
+
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 30px;
+
+    transition: all 1s ease;
+}
+
+.header-logo-animation.scrolled {
+    top: 10px;
+    /* Высота фона было слишком высокой, поэтому было решено сделать высоту чуточка меншье. Сделав фон на всю высоту header и сместив его на 10px вниз. Но снизу нужно вычетать отступившую 10px и вычетать еще 10px для отступа от края  */
+    height: calc(100% - 20px);
+    width: calc(100% - 50px - 50px);
+    /* Та же самая логика, как и в случае с вычеслением высоты */
+    border-radius: 40px;
+}
+
+/* 
+bottom: 81.60000228881836
+height: 61.60000228881836
+left: 50
+right: 266.9875030517578
+top: 20
+width: 216.9875030517578
+x: 50
+y: 20 
+*/

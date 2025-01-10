@@ -1,0 +1,35 @@
+.top-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.city {
+    margin-left: 59px;
+    font-weight: bold;
+}
+
+.phone-number {
+    margin-right: 29px;
+    font-size: 20px;
+    color: rgb(0, 0, 100);
+    font-weight: bold;
+}
+
+.phone-number:hover {
+    color: rgb(0, 0, 180);
+}
+
+.phone-icon {
+    font-size: 16px;
+}
+
+.introduce-content {
+    padding-top: 5%;
+    color: white;
+    font-size: 4rem;
+}
